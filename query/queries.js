@@ -1,5 +1,5 @@
 // 1. Mostrar tots els documents en la col·lecció Restaurants.
-db.debugger.restaurants.find({}, {_id: 0})
+db.restaurants.find({}, {_id: 0})
 
 // 2. Mostrar el restaurant_id i name per tots els documents en la col·lecció Restaurants.
 
