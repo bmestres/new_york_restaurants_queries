@@ -45,21 +45,11 @@
 
 🧩 Mismatch at position 0:
 - **Expected:** {"borough":"Brooklyn","cuisine":"Delicatessen","name":"Wilken'S Fine Food","restaurant_id":40356483}
-- **Actual:** {"_id":"6a79b7ec4623582048ea9b9b","borough":"Brooklyn","cuisine":"Delicatessen","name":"Wilken'S Fine Food"}
+- **Actual:** {"borough":"Brooklyn","cuisine":"Delicatessen","name":"Wilken'S Fine Food"}
 
 ---
-- ❌ MISMATCH - Query **[ 15 ]** Result does not match expected output.
-
-
-🧩 Mismatch at position 0:
-- **Expected:** {"borough":"Manhattan","cuisine":"American","name":"Pieces","restaurant_id":40399910}
-- **Actual:** {"_id":"6a79b7ec4623582048ea9e29","borough":"Manhattan","cuisine":"American","name":"Pieces","restaurant_id":40399910}
+- ✔️ OK - Query **[ 15 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 16 ]** Result does not match expected output.
-
-
-🧩 Mismatch at position 0:
-- **Expected:** {"borough":"Brooklyn","cuisine":"American","name":"Regina Caterers","restaurant_id":40356649}
-- **Actual:** {"_id":"6a79b7ec4623582048ea9b9a","borough":"Brooklyn","cuisine":"American","name":"Regina Caterers","restaurant_id":40356649}
+- ✔️ OK - Query **[ 16 ]**
 
