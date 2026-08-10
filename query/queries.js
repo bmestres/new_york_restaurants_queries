@@ -2,7 +2,7 @@
 db.restaurants.find({}, {_id: 0})
 
 // 2. Mostrar el restaurant_id i name per tots els documents en la col·lecció Restaurants.
-db.restaurants.find({}, {restaurant_id: true, name: true})
+db.restaurants.find({}, {_id: 0, restaurant_id: true, name: true})
 
 // 3. Mostrar el restaurant_id, name, borough i cuisine.
 db.restaurants.find({}, {_id: 0, restaurant_id: 1, name: 1, borough: 1, cuisine: 1})
@@ -26,7 +26,7 @@ db.restaurants.find({'grades.score': {$gt: 90}}, {_id: 0})
 db.restaurants.find({'grades.score': {$gt: 80, $lt: 100}}, {_id: 0})
 
 // 10. Trobar els restaurants amb longitud menor que -95.754168.
-db.restaurants.find({'location.coordinates.0':{$lt: -95.754168}}, {_id: 0})
+db.restaurants.find({'location.coordinates':{$lt: -95.754168}}, {_id: 0})
 
 // 11. Trobar restaurants que no preparen 'American', amb qualificació > 70 i longitud < -65.754168.
 
