@@ -48,3 +48,36 @@
 ---
 - ✔️ OK - Query **[ 16 ]**
 
+---
+- ✔️ OK - Query **[ 17 ]**
+
+---
+- ❌ MISMATCH - Query **[ 18 ]** Result does not match expected output.
+
+
+🔢 Different result lengths: 
+- **Expected:** 359
+- **Got:** 230
+
+---
+- ❌ MISMATCH - Query **[ 19 ]** Result does not match expected output.
+
+
+🔢 Different result lengths: 
+- **Expected:** 305
+- **Got:** 434
+
+---
+- ✔️ OK - Query **[ 20 ]**
+
+---
+- ❌ MISMATCH - Query **[ 21 ]** Result does not match expected output.
+
+
+🔢 Different result lengths: 
+- **Expected:** 14
+- **Got:** 390
+
+---
+- ✔️ OK - Query **[ 22 ]**
+
