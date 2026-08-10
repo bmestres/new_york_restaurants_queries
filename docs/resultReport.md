@@ -64,9 +64,9 @@
 - ❌ MISMATCH - Query **[ 21 ]** Result does not match expected output.
 
 
-🔢 Different result lengths: 
-- **Expected:** 14
-- **Got:** 13
+🧩 Mismatch at position 0:
+- **Expected:** {"address":{},"borough":"Brooklyn","cuisine":"Delicatessen","grades":[{},{},{},{},{},{}],"location":{},"name":"Wilken'S Fine Food","restaurant_id":40356483}
+- **Actual:** {"borough":"Brooklyn","cuisine":"Delicatessen","name":"Wilken'S Fine Food","restaurant_id":40356483}
 
 ---
 - ✔️ OK - Query **[ 22 ]**
