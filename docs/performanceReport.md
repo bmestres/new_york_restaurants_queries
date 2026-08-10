@@ -188,7 +188,7 @@
 18. ## 📊 Query Performance Report
 
 - 🧪 **Query**: `db.restaurants.find({borough: {$in: ["Staten Island","Queens", "Bronx", "Brooklyn"]}}, {_id: 0, restaurant_id: 1, name: 1, borough: 1, cuisine: 1})`
-- ⏱️ **Execution time**: 0 ms
+- ⏱️ **Execution time**: 1 ms
 - 📚 **Documents returned**: 359
 - 🔍 **Documents examined**: 359
 - 🛠️ **Execution stage**: PROJECTION_SIMPLE
@@ -235,6 +235,17 @@
 - ⏱️ **Execution time**: 0 ms
 - 📚 **Documents returned**: 1
 - 🔍 **Documents examined**: 5
+- 🛠️ **Execution stage**: PROJECTION_SIMPLE
+
+## ✅ No significant issues detected
+
+
+23. ## 📊 Query Performance Report
+
+- 🧪 **Query**: `db.restaurants.find({'grades.1.grade': "A", 'grades.1.score': 9, 'grades.1.date': ISODate("2014-08-11T00:00:00Z")}, {_id: 1, restaurant_id: 1, name: 1, grades: 1})`
+- ⏱️ **Execution time**: 2 ms
+- 📚 **Documents returned**: 0
+- 🔍 **Documents examined**: 664
 - 🛠️ **Execution stage**: PROJECTION_SIMPLE
 
 ## ✅ No significant issues detected
