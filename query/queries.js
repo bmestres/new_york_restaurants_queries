@@ -59,7 +59,7 @@ db.restaurants.find({borough: {$nin: ["Staten Island","Queens", "Bronx", "Brookl
 db.restaurants.find({'grades.score': {$lte: 10}}, {_id: 0, restaurant_id: 1, name: 1, borough: 1, cuisine: 1})
 
 // 21. Trobar restaurants que preparen peix, no 'American' ni 'Chinees', o nom comença amb 'Wil'.
-db.restaurants.find({$or: [{cuisine: {$nin: ["American", "Chinese"]}}, {name: /^Wil/}]}, {_id: 0})
+db.restaurants.find({cuisine: {$nin: ["American", "Chinese"]}, $or: [{cuisine: "Seafood"}, {name: /^Wil/}]}, {_id: 0, restaurant_id = 1, name = 1, borough = 1, cuisine = 1})
 
 // 22. Trobar restaurant_id, name, i grades per grau "A", score 11, i data "2014-08-11T00:00:00Z".
 db.restaurants.find({grades: {$elemMatch: {grade: "A", score: 11, date: ISODate("2014-08-11T00:00:00Z")}}}, {_id: 0, restaurant_id: 1, name: 1, grades: 1})
