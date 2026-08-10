@@ -65,7 +65,7 @@ db.restaurants.find({$or: [{cuisine: "Seafood"}, {name: /^Wil/}]}, {_id: 0})
 db.restaurants.find({grades: {$elemMatch: {grade: "A", score: 11, date: ISODate("2014-08-11T00:00:00Z")}}}, {_id: 0, restaurant_id: 1, name: 1, grades: 1})
 
 // 23. Trobar restaurant_id, name i grades on el 2n element té grau "A", score 9 i data "2014-08-11T00:00:00Z".
-
+db.restaurants.find({'grades.1.grade': "A", 'grades.1.score': 9, 'grades.1.date': ISODate("2014-08-11T00:00:00Z")}, {_id: 1, restaurant_id: 1, name: 1, grades: 1})
 
 // 24. Trobar el restaurant_id, name, street, zipcode i coordenades dels restaurants a menys de 5 km de [-74, 40.7].
 
