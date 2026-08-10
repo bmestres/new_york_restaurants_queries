@@ -4,12 +4,7 @@
 - ✔️ OK - Query **[ 1 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 2 ]** Result does not match expected output.
-
-
-🧩 Mismatch at position 0:
-- **Expected:** {"name":"Morris Park Bake Shop","restaurant_id":30075445}
-- **Actual:** {"_id":"6a79a5ff4666e9ba7c1e869f","name":"Morris Park Bake Shop","restaurant_id":30075445}
+- ✔️ OK - Query **[ 2 ]**
 
 ---
 - ✔️ OK - Query **[ 3 ]**
