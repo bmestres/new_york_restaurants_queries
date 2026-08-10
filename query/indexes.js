@@ -1,1 +1,3 @@
-//Use this file to define indexes for your queries
+//Indexes for your queries
+
+db.restaurants.createIndex({borough: 1})
