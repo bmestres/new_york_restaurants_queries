@@ -31,10 +31,20 @@
 - ✔️ OK - Query **[ 10 ]**
 
 ---
-- ✔️ OK - Query **[ 11 ]**
+- ❌ MISMATCH - Query **[ 11 ]** Result does not match expected output.
+
+
+🔢 Different result lengths: 
+- **Expected:** 1
+- **Got:** 3
 
 ---
-- ✔️ OK - Query **[ 12 ]**
+- ❌ MISMATCH - Query **[ 12 ]** Result does not match expected output.
+
+
+🔢 Different result lengths: 
+- **Expected:** 1
+- **Got:** 3
 
 ---
 - ❌ MISMATCH - Query **[ 13 ]** Result does not match expected output.
@@ -42,5 +52,5 @@
 
 🔢 Different result lengths: 
 - **Expected:** 318
-- **Got:** 2
+- **Got:** 533
 
