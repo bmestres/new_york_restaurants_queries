@@ -29,13 +29,13 @@ db.restaurants.find({grades: { $elemMatch: {score: {$gt: 80, $lt: 100}}}}, {_id:
 db.restaurants.find({'location.coordinates':{$lt: -95.754168}}, {_id: 0})
 
 // 11. Trobar restaurants que no preparen 'American', amb qualificació > 70 i longitud < -65.754168.
-
+db.restaurants.find({$and: [{cuisine: {$ne: "American"}}, {'grades.score': {$gt: 70}}, {'location.coordinates': {$lt: -65.754168}}]}, {_id: false})
 
 // 12. El mateix que l'anterior però sense usar operador $and.
-
+db.restaurants.find({cuisine: {$ne: "American"},'grades.score': {$gt: 70},'location.coordinates': {$lt: -65.754168}}, {_id: false})
 
 // 13. Trobar restaurants que no són 'American', grau 'A', i no són de Brooklyn. Ordenats per cuisine descendent.
-
+db.restaurants.find({cuisine: {$ne: "American"},'grades.grade': "A", borough: {$ne: "Brooklin"}}, {_id: false}).sort({cuisine: -1})
 
 // 14. Trobar restaurant_id, name, borough i cuisine on el nom comença amb 'Wil'.
 
