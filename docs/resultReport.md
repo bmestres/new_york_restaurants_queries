@@ -31,26 +31,11 @@
 - ✔️ OK - Query **[ 10 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 11 ]** Result does not match expected output.
-
-
-🔢 Different result lengths: 
-- **Expected:** 1
-- **Got:** 3
+- ✔️ OK - Query **[ 11 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 12 ]** Result does not match expected output.
-
-
-🔢 Different result lengths: 
-- **Expected:** 1
-- **Got:** 3
+- ✔️ OK - Query **[ 12 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 13 ]** Result does not match expected output.
-
-
-🔢 Different result lengths: 
-- **Expected:** 318
-- **Got:** 533
+- ✔️ OK - Query **[ 13 ]**
 
