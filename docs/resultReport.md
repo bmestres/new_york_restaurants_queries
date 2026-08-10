@@ -76,7 +76,7 @@
 
 🔢 Different result lengths: 
 - **Expected:** 14
-- **Got:** 390
+- **Got:** 13
 
 ---
 - ✔️ OK - Query **[ 22 ]**
